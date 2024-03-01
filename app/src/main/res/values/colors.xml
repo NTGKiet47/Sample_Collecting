@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="textBox_color">#d2dbea</color>
+    <color name="background_color">#d2dbea</color>
+    <color name="chosenBtn_color">#c9d4e4</color>
+    <color name="detailBg_color">#f2f5fa</color>
+    <color name="secondary_color">#18c0c1</color>
 </resources>
