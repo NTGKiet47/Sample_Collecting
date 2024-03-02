@@ -21,13 +21,13 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/imageContainer"
                 android:layout_width="0dp"
-                android:layout_height="320dp"
+                android:layout_height="420dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" >
+                app:layout_constraintVertical_bias="0.0">
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -35,120 +35,6 @@
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@tools:sample/avatars" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/contentContainer"
-                android:layout_width="0dp"
-                android:layout_height="495dp"
-                app:cardBackgroundColor="@color/detailBg_color"
-                app:cardCornerRadius="40dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageContainer">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/detailBtnContainer"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        app:cardCornerRadius="30dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.18"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.055">
-
-                        <Button
-                            android:id="@+id/detailBtn"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/chosenBtn_color"
-                            android:text="Button" />
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/photoBtnContainer"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_marginBottom="23dp"
-                        app:cardCornerRadius="30dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.82"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.059">
-
-                        <Button
-                            android:id="@+id/photoBtn"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="#FFFFFF"
-                            android:text="Button" />
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="118dp"
-                        android:layout_height="23dp"
-                        android:text="DETAIL"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.122"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.209" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="341dp"
-                        android:layout_height="201dp"
-                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-                        android:textColor="#000000"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.514"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.445" />
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/modBtnContainer"
-                        android:layout_width="182dp"
-                        android:layout_height="50dp"
-                        app:cardCornerRadius="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.497"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.829">
-
-                        <Button
-                            android:id="@+id/modifyBtn"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/secondary_color"
-                            android:text="MODIFY"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-                    </androidx.cardview.widget.CardView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -178,7 +64,8 @@
                         app:layout_constraintHorizontal_bias="0.04"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.5" />
+                        app:layout_constraintVertical_bias="0.5"
+                        android:contentDescription="backBtn"/>
 
                     <ImageButton
                         android:id="@+id/shareBtn"
@@ -191,8 +78,116 @@
                         app:layout_constraintHorizontal_bias="0.945"
                         app:layout_constraintStart_toEndOf="@+id/backBtn"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.555" />
+                        app:layout_constraintVertical_bias="0.555"
+                        android:contentDescription="shareBtn"/>
 
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detailContainer"
+                android:layout_width="0dp"
+                android:layout_height="600dp"
+                android:layout_marginBottom="-40dp"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageContainer"
+                app:layout_constraintVertical_bias="1.0"
+                android:contentDescription="backwardBtn">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/detailBtnContainer"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.18"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.055">
+
+                        <Button
+                            android:id="@+id/detailBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FFFFFF"
+                            android:text="Details" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/photoBtnContainer"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="23dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.82"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.059">
+
+                        <Button
+                            android:id="@+id/photoBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/background_color"
+                            android:text="Photos" />
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/navbarContainer"
+                app:layout_constraintVertical_bias="0.060000002">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/nameText"
+                        android:layout_width="273dp"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="Project name"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.197" />
+
+                    <TextView
+                        android:id="@+id/detailText"
+                        android:layout_width="396dp"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has bee"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nameText" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
