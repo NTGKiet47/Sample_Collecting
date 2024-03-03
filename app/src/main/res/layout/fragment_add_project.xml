@@ -2,214 +2,230 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_addProject">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/ImageContainer"
-        android:layout_width="402dp"
-        android:layout_height="180dp"
-        app:cardCornerRadius="30dp"
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/addImage"
-                android:layout_width="400dp"
+                android:id="@+id/ImageContainer"
+                android:layout_width="402dp"
                 android:layout_height="180dp"
+                app:cardCornerRadius="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/background_color">
+                    android:layout_height="match_parent">
 
-                    <ImageButton
-                        android:id="@+id/addImageBtn"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:background="@color/textBox_color"
-                        android:src="@drawable/resource__"
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/addImage"
+                        android:layout_width="400dp"
+                        android:layout_height="180dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="add Image"/>
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/background_color">
+
+                            <ImageButton
+                                android:id="@+id/addImageBtn"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@color/textBox_color"
+                                android:contentDescription="add Image"
+                                android:src="@drawable/resource__"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/TitleContainer"
-        android:layout_width="402dp"
-        android:layout_height="48dp"
-        android:background="@color/background_color"
-        app:cardBackgroundColor="#d2dbea"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImageContainer"
-        app:layout_constraintVertical_bias="0.057">
-
-        <TextView
-            android:id="@+id/addTitleText"
-            android:layout_width="124dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Add title"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/DescContainter"
-        android:layout_width="402dp"
-        android:layout_height="200dp"
-        app:cardBackgroundColor="@color/background_color"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleContainer"
-        app:layout_constraintVertical_bias="0.107">
-
-        <TextView
-            android:id="@+id/addDescText"
-            android:layout_width="124dp"
-            android:layout_height="52dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/startDateText"
-        android:layout_width="50dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="16dp"
-        android:gravity="center"
-        android:text="Start:"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/startDateContainer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescContainter"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/startDateContainer"
-        android:layout_width="192dp"
-        android:layout_height="48dp"
-        app:cardBackgroundColor="@color/background_color"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescContainter"
-        app:layout_constraintVertical_bias="0.13999999">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/startDateBtn"
-                android:layout_width="53dp"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/TitleContainer"
+                android:layout_width="402dp"
                 android:layout_height="48dp"
-                android:background="#d2dbea"
-                android:src="@drawable/calendar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.978"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                android:contentDescription="calendar"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/endDateText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="End:"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/startDateText"
-        app:layout_constraintTop_toBottomOf="@+id/DescContainter"
-        app:layout_constraintVertical_bias="0.051" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/endDateContainer"
-        android:layout_width="192dp"
-        android:layout_height="48dp"
-        app:cardBackgroundColor="@color/background_color"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/startDateContainer"
-        app:layout_constraintTop_toBottomOf="@+id/DescContainter"
-        app:layout_constraintVertical_bias="0.14">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/endDateBtn"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="136dp"
                 android:background="@color/background_color"
-                android:src="@drawable/calendar"
+                app:cardBackgroundColor="#d2dbea"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:contentDescription="calendar"/>
+                app:layout_constraintTop_toBottomOf="@+id/ImageContainer"
+                app:layout_constraintVertical_bias="0.05">
+
+                <TextView
+                    android:id="@+id/addTitleText"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Add title"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/DescContainter"
+                android:layout_width="402dp"
+                android:layout_height="200dp"
+                app:cardBackgroundColor="@color/background_color"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TitleContainer"
+                app:layout_constraintVertical_bias="0.07">
+
+                <TextView
+                    android:id="@+id/addDescText"
+                    android:layout_width="124dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/startDateText"
+                android:layout_width="50dp"
+                android:layout_height="23dp"
+                android:gravity="center"
+                android:text="Start:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DescContainter"
+                app:layout_constraintVertical_bias="0.08" />
+
+            <TextView
+                android:id="@+id/endDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.468"
+                app:layout_constraintStart_toEndOf="@+id/startDateText"
+                app:layout_constraintTop_toBottomOf="@+id/DescContainter"
+                app:layout_constraintVertical_bias="0.083" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/startDateContainer"
+                android:layout_width="192dp"
+                android:layout_height="48dp"
+                app:cardBackgroundColor="@color/background_color"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/startDateText"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/startDateBtn"
+                        android:layout_width="53dp"
+                        android:layout_height="48dp"
+                        android:background="#d2dbea"
+                        android:contentDescription="calendar"
+                        android:src="@drawable/calendar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.978"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/endDateContainer"
+                android:layout_width="192dp"
+                android:layout_height="48dp"
+                app:cardBackgroundColor="@color/background_color"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/startDateContainer"
+                app:layout_constraintTop_toBottomOf="@+id/endDateText"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/endDateBtn"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="136dp"
+                        android:background="@color/background_color"
+                        android:contentDescription="calendar"
+                        android:src="@drawable/calendar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/submitContainer"
+                android:layout_width="402dp"
+                android:layout_height="52dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/endDateContainer"
+                app:layout_constraintVertical_bias="0.17000002">
+
+                <Button
+                    android:id="@+id/subitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#7cc6ff"
+                    android:text="SUBMIT"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/submitContainer"
-        android:layout_width="402dp"
-        android:layout_height="52dp"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescContainter">
-
-        <Button
-            android:id="@+id/subitBtn"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#7cc6ff"
-            android:text="SUBMIT"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
